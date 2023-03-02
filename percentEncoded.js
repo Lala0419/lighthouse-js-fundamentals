@@ -1,5 +1,15 @@
 const urlEncode = function (text) {
-	// Put your solution here
+	let result = "";
+	let split = text.split("");
+	// console.log(split)
+	for (elm of split) {
+		if (elm === " ") {
+			elm = "20%";
+			// console.log(elm)
+		}
+		result += elm;
+	}
+	return result;
 };
 
 console.log(urlEncode("Lighthouse Labs"));
