@@ -11,3 +11,96 @@
 
 // Tips
 // As this is a big refactor—that is, a restructuring of the code with the purpose of improving a non-functional feature, in our case reusability–consider tackling it in steps. Start with one of the parameters, test it thoroughly, then add the others one at a time while constantly testing until you've solved the whole problem.
+
+function loopyLighthouse(range, multiples, words) {
+	for (let i = range[0]; i <= range[1]; i++) {
+		if (i % multiples[0] === 0 && i % multiples[1] === 0) {
+			console.log(words[0] + words[1]);
+		} else if (i % multiples[0] === 0) {
+			console.log(words[0]);
+		} else if (i % multiples[1] === 0) {
+			console.log(words[1]);
+		} else {
+			console.log(i);
+		}
+	}
+}
+
+loopyLighthouse([15, 90], [2, 5], ["Batty", "Beacon"]);
+//output
+// Beacon;
+// Batty;
+// 17;
+// Batty;
+// 19;
+// BattyBeacon;
+// 21;
+// Batty;
+// 23;
+// Batty;
+// Beacon;
+// Batty;
+// 27;
+// Batty;
+// 29;
+// BattyBeacon;
+// 31;
+// Batty;
+// 33;
+// Batty;
+// Beacon;
+// Batty;
+// 37;
+// Batty;
+// 39;
+// BattyBeacon;
+// 41;
+// Batty;
+// 43;
+// Batty;
+// Beacon;
+// Batty;
+// 47;
+// Batty;
+// 49;
+// BattyBeacon;
+// 51;
+// Batty;
+// 53;
+// Batty;
+// Beacon;
+// Batty;
+// 57;
+// Batty;
+// 59;
+// BattyBeacon;
+// 61;
+// Batty;
+// 63;
+// Batty;
+// Beacon;
+// Batty;
+// 67;
+// Batty;
+// 69;
+// BattyBeacon;
+// 71;
+// Batty;
+// 73;
+// Batty;
+// Beacon;
+// Batty;
+// 77;
+// Batty;
+// 79;
+// BattyBeacon;
+// 81;
+// Batty;
+// 83;
+// Batty;
+// Beacon;
+// Batty;
+// 87;
+// Batty;
+// 89;
+// BattyBeacon;
