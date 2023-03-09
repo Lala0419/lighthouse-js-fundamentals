@@ -14,3 +14,27 @@
 // loopyLighthouse
 // supercalifragalisticexpialidocious
 // Instruction
+
+const camelCase = function (input) {
+	let arr = input.split(" ");
+	let string = "";
+	console.log(arr);
+	for (i = 1; i < arr.length; i++) {
+		arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
+	} //アレイの中の1つ1つエレメント　is, a, string
+	string = arr.join("");
+	// for(let i =0; i < input.length; i++){
+	//   if(i==='f'){
+	//     result toUpperCase()
+	//   }
+	// }
+	return string;
+};
+
+console.log(camelCase("this is a string"));
+console.log(camelCase("loopy lighthouse"));
+console.log(camelCase("supercalifragalisticexpialidocious"));
+
+// thisIsAString
+// loopyLighthouse
+// supercalifragalisticexpialidocious
