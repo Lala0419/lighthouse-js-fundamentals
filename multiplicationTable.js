@@ -33,3 +33,17 @@ const multiplicationTable = function (maxValue) {
 // 8 16 24 32 40 48 56 64 72 80
 // 9 18 27 36 45 54 63 72 81 90
 // 10 20 30 40 50 60 70 80 90 100
+
+// The function multiplicationTable takes in a single parameter maxValue
+// which is the highest value of the multiplication table.
+// It returns the multiplication table as a string.
+
+// The function uses two nested for loops to iterate through
+// all the values from 1 to maxValue. For each pair of values (i and j),
+// it multiplies them and adds the result to the table string, followed by a space.
+// After each row is complete, it adds a newline character to start a new row.
+
+// Finally, the function returns the table string which contains
+// the complete multiplication table. The console.log statements
+// at the end of the code call the function for maxValue values of 1, 5, and 10,
+// respectively.
