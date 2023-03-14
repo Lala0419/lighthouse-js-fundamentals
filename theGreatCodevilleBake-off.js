@@ -77,3 +77,7 @@ recipes = [
 ];
 
 console.log(chooseRecipe(bakeryA, bakeryB, recipes));
+
+// The ingredientCheck() function takes in a bakery and an array of ingredients, and checks if the bakery has any of the ingredients in the array by using the includes() method of arrays. It returns true if at least one ingredient is found, or false otherwise.
+
+// The chooseRecipe() function iterates over each recipe in the recipes array, and for each recipe it checks if both bakeryA and bakeryB have one ingredient each by calling ingredientCheck() on each bakery and passing in the recipe's ingredients array. If both ingredients are found, it returns the recipe's name. If no recipe is found with the required ingredients, chooseRecipe() returns undefined.
